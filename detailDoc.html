@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>index</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/custom.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- menu.jsp -->
+      <div class="container-fluid">
+      <p><h1>新宿図書館 図書管理システム</h1></p>
+      <p class="right"><a href="index.html">トップメニューに戻る</a></p>
+      </div>
+      <!-- end menu.jsp -->
+
+      <div class="container">
+        <div class="container">
+          <h2 class="section">資料情報 詳細</h2>
+          <div id="detail">
+            <div>
+              <img src="book.png">
+            </div>
+            <div>
+              <h3>7つの習慣</h3>
+              <strong>スティーブン・R・コビー</strong>
+              <p class="right"><a href="https://www.amazon.co.jp/gp/product/4906638015"><img src="amazon_buy.png"></a></p>
+              <table class="table table-striped">
+                <tr>
+                  <td>ISBN番号</td>
+                  <td>4906638015</td>
+                </tr>
+                <tr>
+                  <td>書籍名</td>
+                  <td>7つの習慣</td>
+                </tr>
+                <tr>
+                  <td>分類コード</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>著者</td>
+                  <td>スティーブン・R・コビー</td>
+                </tr>
+                <tr>
+                  <td>出版社</td>
+                  <td>キングベアー出版</td>
+                </tr>
+                <tr>
+                  <td>出版日</td>
+                  <td>1996.12.25</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="container">
+            <h2 class="section">資料在庫情報</h2>
+            <table class="table table-striped">
+              <tr>
+                <td>資料ID</td>
+                <td>貸出状況</td>
+              </tr>
+              <tr>
+                <td>123</td>
+                <td><a href="newRental.html"><span class="text-primary">貸出可</span></a></td>
+              </tr>
+              <tr>
+                <td>124</td>
+                <td><span class="text-warning">貸出中</span> <a href="newReturn.html" class="text-danger">返却する</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>

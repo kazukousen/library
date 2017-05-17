@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>index</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/custom.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- menu.jsp -->
+      <div class="container-fluid">
+      <p><h1>新宿図書館 図書管理システム</h1></p>
+      <p class="right"><a href="index.html">トップメニューに戻る</a></p>
+      </div>
+      <!-- end menu.jsp -->
+
+      <!-- searchDoc -->
+      <div class="container">
+        <h2 class="section">検索条件入力</h2>
+        <p>検索したい本の情報を入力して検索してください。</p>
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-xs-2">ID</label>
+            <div class="col-xs-5">
+                <input type="text" name="id" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-xs-2">ISBN番号</label>
+            <div class="col-xs-5">
+                <input type="text" name="isbn" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-xs-2">書籍名</label>
+            <div class="col-xs-5">
+                <input type="text" name="title" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-xs-2">著者名</label>
+            <div class="col-xs-5">
+                <input type="text" name="author" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-xs-offset-2 col-xs-10">
+              <button type="submit" class="btn btn-primary">送信</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- end searchDoc -->
+
+      <!-- resultDoc -->
+      <div class="container">
+        <h2 class="section">会員管理</h2>
+        <table class="table table-striped">
+          <tr>
+            <td>ISBN番号</td>
+            <td>書籍名</td>
+            <td>分類コード</td>
+            <td>著者</td>
+            <td>出版社</td>
+            <td>出版日</td>
+            <td>資料ID</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>4906638015</td>
+            <td><a href="detailDoc.html">7つの習慣</a></td>
+            <td>3</td>
+            <td>スティーブン・R・コビー</td>
+            <td>キングベアー出版</td>
+            <td>1996.12.25</td>
+            <td>123, 124</td>
+            <td><a href="updateDoc.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+               <a href="deleteDoc.html"><i class="fa fa-trash" aria-hidden="true"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>4480425993</td>
+            <td><a href="detailDoc.html">よいこの君主論</a></td>
+            <td>1</td>
+            <td>架神恭介/辰巳一世</td>
+            <td>つくま書房</td>
+            <td>2009.05.11</td>
+            <td>234, 235, 236</td>
+            <td><a href="updateDoc.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+               <a href="deleteDoc.html"><i class="fa fa-trash" aria-hidden="true"></i></a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- end resultDoc -->
+    </div>
+  </body>
+</html>

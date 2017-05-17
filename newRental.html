@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>index</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/locales/bootstrap-datepicker.ja.min.js"></script>
+    <link rel="stylesheet" href="/custom.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- menu.jsp -->
+      <div class="container-fluid">
+      <p><h1>新宿図書館 図書管理システム</h1></p>
+      <p class="right"><a href="index.html">トップメニューに戻る</a></p>
+      </div>
+      <!-- end menu.jsp -->
+
+      <!-- newRental -->
+      <div class="container">
+        <h2 class="section">資料貸出 内容確認</h2>
+        <p>借りたい資料が以下で正しければ、下にある「借りる」ボタンを押してください。</p>
+        <p>異なる場合は「戻る」ボタンを押してください。</p>
+        <table class="table table-striped">
+          <tr>
+            <td>資料ID</td>
+            <td>123</td>
+          </tr>
+          <tr>
+            <td>ISBN番号</td>
+            <td>4906638015</td>
+          </tr>
+          <tr>
+            <td>書籍名</td>
+            <td>7つの習慣</td>
+          </tr>
+          <tr>
+            <td>分類コード</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>著者</td>
+            <td>スティーブン・R・コビー</td>
+          </tr>
+          <tr>
+            <td>出版社</td>
+            <td>キングベアー出版</td>
+          </tr>
+          <tr>
+            <td>出版日</td>
+            <td>1996.12.25</td>
+          </tr>
+        </table>
+        <form class="form-horizontal" method="post">
+          <div class="form-group">
+            <div class="col-xs-offset-2 col-xs-10">
+              <input type="hidden" name="rental" value=""/>
+              <input type="submit" class="btn btn-primary" value="借りる"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-xs-offset-2 col-xs-10">
+              <button type="submit" class="btn btn-default">戻る</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- end newRental -->

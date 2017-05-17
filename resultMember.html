@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>index</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/custom.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- menu.jsp -->
+      <div class="container-fluid">
+      <p><h1>新宿図書館 図書管理システム</h1></p>
+      <p class="right"><a href="index.html">トップメニューに戻る</a></p>
+      </div>
+      <!-- end menu.jsp -->
+
+      <!-- searchDoc -->
+      <div class="container">
+        <h2 class="section">検索条件入力</h2>
+        <p>検索したい会員の情報を入力して検索してください。</p>
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-xs-2">E-mail</label>
+            <div class="col-xs-5">
+                <input type="text" name="email" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-xs-offset-2 col-xs-10">
+              <button type="submit" class="btn btn-primary">送信</button>
+            </div>
+          </div>
+        </form>
+        </form>
+      </div>
+      <!-- end searchDoc -->
+
+      <!-- resultDoc -->
+      <div class="container">
+        <h2 class="section">会員管理</h2>
+        <table class="table table-striped">
+          <tr>
+            <td>会員ID</td>
+            <td>氏名</td>
+            <td>住所</td>
+            <td>電話番号</td>
+            <td>E-mail</td>
+            <td>生年月日</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>新田 太郎</td>
+            <td>東京都武蔵野市吉祥寺北町</td>
+            <td>090-9999-9999</td>
+            <td>staff@google.co.jp</td>
+            <td>1994.02.28</td>
+            <td><a href="updateMember.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+               <a href="deleteMember.html"><i class="fa fa-trash" aria-hidden="true"></i></a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- end resultDoc -->
+    </div>
+  </body>
+</html>

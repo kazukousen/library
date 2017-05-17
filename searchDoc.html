@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>index</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/custom.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- menu.jsp -->
+      <div class="container-fluid">
+      <p><h1>新宿図書館 図書管理システム</h1></p>
+      <p class="right"><a href="index.html">トップメニューに戻る</a></p>
+      </div>
+      <!-- menu.jsp -->
+
+      <div class="container">
+        <h2 class="section">検索条件入力</h2>
+        <p>検索したい本の情報を入力して検索してください。</p>
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-xs-2">ID</label>
+            <div class="col-xs-5">
+                <input type="text" name="id" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-xs-2">ISBN番号</label>
+            <div class="col-xs-5">
+                <input type="text" name="isbn" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-xs-2">書籍名</label>
+            <div class="col-xs-5">
+                <input type="text" name="title" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-xs-2">著者名</label>
+            <div class="col-xs-5">
+                <input type="text" name="author" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-xs-offset-2 col-xs-10">
+              <button type="submit" class="btn btn-primary">送信</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </body>
+</html>
