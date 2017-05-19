@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>index</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="statics/custom.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-fluid">
+      <p><h1>DBスキーマ</h1></p>
+      </div>
+      <div class="container">
+        <h2>User</h2>
+        <ul class="list-group">
+        <li>テーブル名はUser</li>
+        </ul>
+        <h3>列の説明</h3>
+        <ul>
+        <li>user_id (int)<ul>
+        <li>主キー、会員ID</li>
+        </ul>
+        </li>
+        <li>user_name (String)<ul>
+        <li>会員の名前</li>
+        </ul>
+        </li>
+        <li>user_address (String)<ul>
+        <li>住所</li>
+        </ul>
+        </li>
+        <li>user_tel (String)<ul>
+        <li>電話番号</li>
+        <li>ハイフンありで保存</li>
+        </ul>
+        </li>
+        <li>user_email (String)<ul>
+        <li>Eメールアドレス</li>
+        </ul>
+        </li>
+        <li>user_password<ul>
+        <li>一次開発とりあえず無視</li>
+        <li>ユーザのパスワード</li>
+        </ul>
+        </li>
+        <li>user_role<ul>
+        <li>一次開発とりあえず無視</li>
+        <li>0: 利用者, 1: 受付係 2: 司書</li>
+        </ul>
+        </li>
+        </ul>
+        <table class="table table-striped">
+        <thead>
+        <tr>
+        <th>user_id</th>
+        <th>user_name</th>
+        <th>user_address</th>
+        <th>user_tel</th>
+        <th>user_email</th>
+        <th>user_password</th>
+        <th>user_birthday</th>
+        <th>user_role</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>1</td>
+        <td>新田</td>
+        <td>東京都〜</td>
+        <td>090-9999-9999</td>
+        <td><a href="mailto:staff@google.co.jp">staff@google.co.jp</a></td>
+        <td>とりあえず無視</td>
+        <td>1995/02/28</td>
+        <td>1</td>
+        </tr>
+        </tbody>
+        </table>
