@@ -21,10 +21,11 @@
       </div>
       <!-- end menu.jsp -->
 
-      <!-- confirmDoc -->
+      <!-- deleteRental -->
       <div class="container">
-        <h2 class="section">資料返却完了</h2>
-        <p>資料の返却が完了しました。</p>
+        <h2 class="section">資料返却 内容確認</h2>
+        <p>返却する資料が以下で正しければ、下にある「返却する」ボタンを押してください。</p>
+        <p>異なる場合は「戻る」ボタンを押してください。</p>
         <table class="table table-striped">
           <tr>
             <td>資料ID</td>
@@ -55,11 +56,18 @@
             <td>1996.12.25</td>
           </tr>
         </table>
-          <p class="btn btn-primary">検索結果に戻る</p>
+        <form class="form-horizontal" method="post">
+          <div class="form-group">
+            <div class="col-xs-offset-2 col-xs-10">
+              <input type="hidden" name="rental" value=""/>
+              <input type="submit" class="btn btn-danger" value="返却する"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-xs-offset-2 col-xs-10">
+              <button type="submit" class="btn btn-default">戻る</button>
+            </div>
+          </div>
         </form>
       </div>
-      <!-- end confirmDoc -->
-
-    </div>
-  </body>
-</html>
+      <!-- end newRental -->
